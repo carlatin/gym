@@ -11,6 +11,8 @@ var pokemon= angular.module("pokemon",[])
 				for(var imagen=1;imagen<100;imagen++){
 					if(imagen<10){
 						$scope.Listado[imagen].data.sprites.front_default="https://assets.pokemon.com/assets/cms2/img/pokedex/full/00"+imagen+".png"
+					}else if (imagen>9){
+						$scope.Listado[imagen].data.sprites.front_default="https://assets.pokemon.com/assets/cms2/img/pokedex/full/0"+imagen+".png"
 					}
 				}
 			})
