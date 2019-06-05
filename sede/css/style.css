@@ -1,0 +1,90 @@
+.contenedor{
+	background: url("http://landscape-photography-blog.com/images/pokemon-wallpapers/36406291-pokemon-wallpapers.jpg")no-repeat;
+	background-size: cover;
+	width: 100% !important;
+	height: 920px !important;
+}
+.login{
+	background:url("https://www.rosiesrewards.com/wp-content/uploads/2018/11/pokemon-iphone-wallpaper-luxury-fondos-para-whatsapp-of-pokemon-iphone-wallpaper.jpg")no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+	opacity:0.8;
+	margin-top:15%;
+	border-radius: 60px;
+	border: 6px #000000 solid; 
+}
+.nombre{
+	margin-top: 30%;
+}
+.usuario{
+	background-size: center;
+	width: 50%;
+	height: 200px;
+	margin-left: 25%;
+}
+.navBar{
+	height:auto;
+	background: #F1524F;
+}
+.pokk{
+	margin: 0 auto;
+	height: 200px;
+}
+.pok{
+	color: #FFF;
+}
+.altototal{
+	height: 100%;
+}
+.pad{
+	padding: 4%;
+}
+.pokeinfo{
+	margin: 0 auto;
+	width: 100% !important;
+	border: 4px #000000 solid;
+}
+.imgpoke{
+	background: #000000;
+	margin:0 auto;
+	height: 150px !important;
+	width: 100% !important;
+}
+.nompoke{
+	background:#EBF4EF;
+	padding: 4%;
+	border-top: 4px solid #000000;
+}
+.fondo{
+	background: url("http://landscape-photography-blog.com/images/pokemon-wallpapers/36406291-pokemon-wallpapers.jpg")no-repeat;
+	background-size: cover;
+}
+form{
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: center;
+}
+input{
+	background: #000000;
+	cursor:pointer;
+	color:#FFF;
+	width: 80% !important;
+	height: 50px;
+	border: 4px solid #F15C0D;
+	border-radius: 50px;
+	font-family: 'Anton', sans-serif;
+}
+label{
+	font-size: 40px;
+	font-family: 'Anton', sans-serif;
+}
+.iniciar{
+	background: #F15C0D;
+	font-family: 'Anton', sans-serif;
+	border: 2px solid #FFF;
+	width: 30%;
+	padding: 4px;
+	font-size: 30px;
+	border-radius: 50px;
+}

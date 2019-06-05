@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="pokemon">
+<head >
+	<link rel="stylesheet" href="../lib/boo2/css/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../lib/jQuery.js"></script>
+	<title>PokeLogin</title>
+</head>
+<body class="fondo" ng-controller="listadopokemon">
+	<div class="container-fluid navBar">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="https://www.pokebip.com/membres/galeries/1442/1442500308013685000.png" class="img-responsive pokk">
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="col-md-3 pad" ng-repeat="p in Listado">
+			<div class="pokeinfo">
+				<div>
+					<img src="{{p.data.sprites.front_default}}" class="img-responsive imgpoke">
+				</div>
+				<div class="text-center nompoke">
+					<h4>{{p.data.name}}</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../lib/angular.js"></script>
+	<script src="../lib/boo2/js/bootstrap.js"></script>
+	<script src="../js/script.js"></script>
+</body>
+</html>
