@@ -3,29 +3,72 @@
 <head >
 	<link rel="stylesheet" href="../lib/boo2/css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<script src="../lib/jQuery.js"></script>
 	<title>PokeLogin</title>
 </head>
-<body class="fondo" ng-controller="listadopokemon">
-	<div class="container-fluid navBar">
+<body class="fondo2" ng-controller="listadopokemon">
+	<div class="container navBar">
 		<div class="row">
-			<div class="col-md-12">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png" class="img-responsive pokk">
+			<div class="col-md-6 col-sm-6 col-xs-6"></div>
+			<div class="col-md-6 col-sm-6 col-xs-6">
+				<img src="../nombre.png" class="img-responsive pokk">
+				<br><br>
+				<h2 class="centrarr"><input class="estilob" type="text" placeholder="   Puedes busca tu pokemon " ng-model="pokemon"><i style="color:#000000;-webkit-text-stroke: 1px #FFF;" class="fas fa-search"></i></h2>
+				<br><br>
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid">
-		<div class="col-md-3 pad" ng-repeat="p in Listado">
-			<div class="pokeinfo">
-				<div>
-					<img src="{{p.data.sprites.front_default}}" class="img-responsive imgpoke">
+	<div class="container fondopp">
+		<div class="row esc">
+			<div class="col-md-6 col-xs-6 col-sm-6" ng-repeat="p in Listado  | filter : pokemon">
+				<div class="estilodex">
+					<div class="col-md-6">
+						<img  class="imgpm img-responsive" src="{{p.data.sprites.front_default}}" alt="">
+					</div>
+					<div class="col-md-6">
+					<!--inician los tipos y habilidades-->
+						<div class="row color1">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<h3 class="nombrep">{{p.data.name}}</h3>
+							</div>
+						</div>
+						<div class="row color2">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<h3 class="nombrep">Tipo</h3>
+							</div>
+						</div>
+						<div class="row color3">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<h3 class="nombrep">Altura</h3>
+							</div>
+						</div>
+					<!--fin de las caracteristicas-->
+					</div>
 				</div>
-				<div class="text-center nompoke">
-					<h4>{{p.data.name}}</h4>
-				</div>
+				<br>
 			</div>
 		</div>
 	</div>
+<!--	<div class="container-fluid">
+		<div class="row">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="centrarr"><input type="text" ng-model="pokemon"></p>
+				</div>
+			</div>
+			<div class="col-md-3 pad" ng-repeat="p in Listado  | filter : pokemon">
+				<div class="pokeinfo">
+					<div>
+						<img src="{{p.data.sprites.front_default}}" class="img-responsive imgpoke">
+					</div>
+					<div class="text-center nompoke">
+						<h4>{{p.data.name}}</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
 	<script src="../lib/angular.js"></script>
 	<script src="../lib/boo2/js/bootstrap.js"></script>
 	<script src="../js/script.js"></script>
